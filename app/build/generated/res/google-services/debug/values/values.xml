@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">662967712114-hhcvqohg678la44qili197am4hs9lueu.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">662967712114</string>
+    <string name="google_api_key" translatable="false">AIzaSyBkp9nmOiBMS8hq_AZz9_-7Hzp0K7ZV29E</string>
+    <string name="google_app_id" translatable="false">1:662967712114:android:eac1945f659f85c11d85eb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBkp9nmOiBMS8hq_AZz9_-7Hzp0K7ZV29E</string>
+    <string name="google_storage_bucket" translatable="false">shift-roster-44ceb.appspot.com</string>
+    <string name="project_id" translatable="false">shift-roster-44ceb</string>
+</resources>
