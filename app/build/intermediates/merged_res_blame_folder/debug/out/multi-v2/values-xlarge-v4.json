@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Clone\\ShiftRosterClone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "E:\\Android Clone\\prodShiftRoster\\ShiftRosterPROD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Rajdeep Singh\\.gradle\\caches\\transforms-2\\files-2.1\\8b32d0a72f26ebd0504e4b70dffdc5c1\\appcompat-1.3.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\Rajdeep Singh\\.gradle\\caches\\transforms-2\\files-2.1\\1c22a04c5736c12fe593934adbfdb460\\appcompat-1.3.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

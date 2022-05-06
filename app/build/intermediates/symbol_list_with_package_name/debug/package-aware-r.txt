@@ -57,8 +57,13 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
 array names
+array preloaded_fonts
 array shifts
+array shifts_for_res
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1014,6 +1019,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1080,6 +1089,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hintColor
 color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
@@ -1283,6 +1293,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1344,6 +1356,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen et_height
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1357,6 +1370,9 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen margin_2
+dimen margin_8dp
+dimen margin_parent
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_padding
 dimen material_clock_face_margin_top
@@ -1602,6 +1618,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding_6dp
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -1735,11 +1752,14 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_bg
+drawable custom_et_bg
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable eyeclosed
+drawable eyeicon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_online_prediction_24
@@ -1786,9 +1806,11 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable round_btn_bg
 drawable sr
+drawable sr1
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font audiowide
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1881,9 +1903,18 @@ id beginning
 id blocking
 id bottom
 id bounce
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
+id btn_file_select
+id btn_login
+id btn_logout
 id btn_name_search
 id btn_shift_search
 id btn_upload
+id btn_viewRoster
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -1951,6 +1982,7 @@ id easeInOut
 id easeOut
 id edit_query
 id elastic
+id email_main
 id end
 id endToStart
 id end_padder
@@ -1960,6 +1992,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id file_path
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1991,7 +2024,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id img_info
 id info
 id invisible
 id inward
@@ -2090,6 +2122,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id pass_main
 id password_toggle
 id path
 id pathRelative
@@ -2137,6 +2170,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_pass
 id sin
 id skipCollapsed
 id slide
@@ -2226,6 +2260,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id upload_to_FB
 id useLogo
 id view_offset_helper
 id view_pager2
@@ -2308,11 +2343,15 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin
 layout activity_leave_search_list_view
+layout activity_login_page
 layout activity_main
+layout activity_progress_bar
 layout activity_resourcesearch__listview
 layout activity_splash_screen
-layout admin
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout datepicker
 layout design_bottom_navigation_item
@@ -2333,6 +2372,7 @@ layout design_text_input_start_icon
 layout fragment_date_search
 layout fragment_resource_search
 layout fragment_shift_search
+layout launcher_activity
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

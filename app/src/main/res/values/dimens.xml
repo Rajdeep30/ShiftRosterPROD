@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="margin_parent">20dp</dimen>
+    <dimen name="margin_2">12dp</dimen>
+    <dimen name="et_height">42dp</dimen>
+</resources>

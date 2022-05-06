@@ -39,18 +39,14 @@
           android:textAlignment="center"
           android:paddingTop="15dp"
           android:textColor="@color/black"></TextView>
-      <LinearLayout
-          android:layout_width="400dp"
-          android:layout_height="wrap_content"
-          android:gravity="center"
-          android:layout_gravity="center">
+
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="GE"
+              android:text="Shift Roster"
               android:textSize="30sp"
               android:textColor="@color/black"
-              android:layout_marginLeft="120dp"></TextView>
+              android:layout_gravity="center"></TextView>
 
 <!--          <View-->
 <!--              android:layout_width="3dp"-->
@@ -61,16 +57,8 @@
 <!--              android:layout_marginTop="5dp"></View>-->
 
 
-          <TextView
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_marginTop="3sp"
-              android:layout_marginLeft="9dp"
-              android:text="Capgemini"
-              android:textColor="@color/black"
-              android:textSize="25sp"></TextView>
 
-      </LinearLayout>
+
       <TextView
           android:text="Welcome to SysOps Shift Roster Application"
           android:textAlignment="center"

@@ -25,6 +25,8 @@ public class ShiftSearchFragment extends Fragment {
 
     Button btn_shift_search;
     Spinner spinner_date, spinner_shift;
+    String G1 = "G1";
+    String G3 = "G3";
     int selectedDateIndex=1, selectedNameIndex =1, selectedShiftIndex = 1;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -96,6 +98,8 @@ public class ShiftSearchFragment extends Fragment {
 
                 ArrayList<Integer> personIndex = new ArrayList<>();
                 ArrayList<String> personName = new ArrayList<>();
+                ArrayList<String> shiftName = new ArrayList<>();
+                ArrayList<String> finalString = new ArrayList<>();
                 selectedShiftIndex = spinner_shift.getSelectedItemPosition();
                 selectedDateIndex = spinner_date.getSelectedItemPosition();
                 String selectedDate = spinner_date.getSelectedItem().toString();
@@ -103,20 +107,38 @@ public class ShiftSearchFragment extends Fragment {
                 if(selectedDateIndex != 0){
                 for(int i=0; i<GlobalVar.mainCSV.get(selectedDateIndex).size();i++)
                 {
-                    if(GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)))
-                    {
-                        personIndex.add(i);
+                    if (GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase("F3")){
+                        if(GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)) || G1.equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)))
+                        {
+                            personIndex.add(i);
+                        }
+                    }else if (GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase("S2")){
+                        if(GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)) || G3.equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)))
+                        {
+                            personIndex.add(i);
+                        }
+                    }else {
+                        if(GlobalVar.shiftSearch.get(selectedShiftIndex).equalsIgnoreCase(GlobalVar.mainCSV.get(selectedDateIndex).get(i)))
+                        {
+                            personIndex.add(i);
+                        }
                     }
                 }
 
                 for(Integer i: personIndex){
 
                     personName.add(GlobalVar.mainCSV.get(0).get(i));
+                    shiftName.add(GlobalVar.mainCSV.get(selectedDateIndex).get(i));
                     //Toast.makeText(MainActivity.this, "Persons having "+ shift_search.get(selectedShiftIndex) + " are: "+allRows.get(0).get(i), Toast.LENGTH_SHORT).show();
                 }
 
+                for (int i=0; i<personName.size(); i++){
+                    String temp = personName.get(i) +" -- "+ shiftName.get(i);
+                    finalString.add(temp);
+                }
+
                     Intent intent = new Intent(getContext(), ShiftSearchListView.class);
-                    intent.putStringArrayListExtra("personName", personName);
+                    intent.putStringArrayListExtra("personName", finalString);
                     intent.putExtra("shiftName", GlobalVar.shiftSearch.get(selectedShiftIndex));
                     intent.putExtra("date", selectedDate);// getText() SHOULD NOT be static!!!
                     startActivity(intent);

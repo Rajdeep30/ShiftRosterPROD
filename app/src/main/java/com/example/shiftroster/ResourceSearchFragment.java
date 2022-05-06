@@ -86,7 +86,7 @@ public class ResourceSearchFragment extends Fragment {
         spinner_resource.setAdapter(myAdapterResource);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getContext(),
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.shifts));
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.shifts_for_res));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_shift.setAdapter(myAdapter);
 

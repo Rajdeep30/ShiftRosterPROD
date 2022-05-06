@@ -1,3 +1,7 @@
+com/example/shiftroster/BuildConfig.java
+ com.example.shiftroster.BuildConfig
+com/example/shiftroster/GlobalVar.java
+ com.example.shiftroster.GlobalVar
 com/example/shiftroster/resourcesearch_Listview.java
  com.example.shiftroster.resourcesearch_Listview
 com/example/shiftroster/FragmentAdapter.java
@@ -5,26 +9,36 @@ com/example/shiftroster/FragmentAdapter.java
 com/example/shiftroster/ResourceSearchFragment.java
  com.example.shiftroster.ResourceSearchFragment
  com.example.shiftroster.ResourceSearchFragment$1
-com/example/shiftroster/Admin.java
- com.example.shiftroster.Admin
+com/example/shiftroster/SplashScreen.java
+ com.example.shiftroster.SplashScreen
+ com.example.shiftroster.SplashScreen$1
+com/example/shiftroster/LoginPage.java
+ com.example.shiftroster.LoginPage
+ com.example.shiftroster.LoginPage$1
+ com.example.shiftroster.LoginPage$2
+ com.example.shiftroster.LoginPage$2$1
 com/example/shiftroster/DateSearchFragment.java
  com.example.shiftroster.DateSearchFragment
  com.example.shiftroster.DateSearchFragment$1
+com/example/shiftroster/AdminActivity.java
+ com.example.shiftroster.AdminActivity
+ com.example.shiftroster.AdminActivity$1
+ com.example.shiftroster.AdminActivity$2
+ com.example.shiftroster.AdminActivity$3
+com/example/shiftroster/LeaveSearchListView.java
+ com.example.shiftroster.LeaveSearchListView
+com/example/shiftroster/LoadingBar.java
+ com.example.shiftroster.LoadingBar
+com/example/shiftroster/ShiftSearchFragment.java
+ com.example.shiftroster.ShiftSearchFragment
+ com.example.shiftroster.ShiftSearchFragment$1
 com/example/shiftroster/ShiftSearchListView.java
  com.example.shiftroster.ShiftSearchListView
 com/example/shiftroster/MainActivity.java
  com.example.shiftroster.MainActivity
  com.example.shiftroster.MainActivity$1
  com.example.shiftroster.MainActivity$2
-com/example/shiftroster/GlobalVar.java
- com.example.shiftroster.GlobalVar
-com/example/shiftroster/LeaveSearchListView.java
- com.example.shiftroster.LeaveSearchListView
-com/example/shiftroster/BuildConfig.java
- com.example.shiftroster.BuildConfig
-com/example/shiftroster/ShiftSearchFragment.java
- com.example.shiftroster.ShiftSearchFragment
- com.example.shiftroster.ShiftSearchFragment$1
-com/example/shiftroster/SplashScreen.java
- com.example.shiftroster.SplashScreen
- com.example.shiftroster.SplashScreen$1
+com/example/shiftroster/LauncherActivity.java
+ com.example.shiftroster.LauncherActivity
+ com.example.shiftroster.LauncherActivity$1
+ com.example.shiftroster.LauncherActivity$2

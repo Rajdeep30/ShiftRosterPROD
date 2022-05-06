@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         shift_search.add("F3");
         shift_search.add("S2");
         shift_search.add("T7");
+        shift_search.add("G1");
+        shift_search.add("G3");
         shift_search.add("GS");
         shift_search.add("Leave");
 
@@ -117,11 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        csvfileString = this.getApplicationInfo().dataDir + File.separatorChar + "October_shift_roster_2021.csv";
+        csvfileString = this.getApplicationInfo().dataDir + File.separatorChar + "SR_May_2022_CSV.csv";
 
         try {
             AssetManager am = getAssets();
-            InputStream inputStream = am.open("October_shift_roster_2021.csv");
+            InputStream inputStream = am.open("SR_May_2022_CSV.csv");
             File csvfile = createFileFromInputStream(inputStream);
             CSVReader reader = new CSVReader(new FileReader(csvfile));
             String[] nextLine;
@@ -141,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 dates.add(allRows.get(i).get(0));
             }
             GlobalVar.datesRow = dates;
-            Toast.makeText(this, "Welcome..." , Toast.LENGTH_SHORT).show();
+
 
         } catch (Exception e) {
             e.printStackTrace();
