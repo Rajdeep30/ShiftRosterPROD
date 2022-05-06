@@ -4,11 +4,14 @@ com/example/shiftroster/GlobalVar.java
  com.example.shiftroster.GlobalVar
 com/example/shiftroster/resourcesearch_Listview.java
  com.example.shiftroster.resourcesearch_Listview
-com/example/shiftroster/FragmentAdapter.java
- com.example.shiftroster.FragmentAdapter
-com/example/shiftroster/ResourceSearchFragment.java
- com.example.shiftroster.ResourceSearchFragment
- com.example.shiftroster.ResourceSearchFragment$1
+com/example/shiftroster/LauncherActivity.java
+ com.example.shiftroster.LauncherActivity
+ com.example.shiftroster.LauncherActivity$1
+ com.example.shiftroster.LauncherActivity$2
+com/example/shiftroster/MainActivity.java
+ com.example.shiftroster.MainActivity
+ com.example.shiftroster.MainActivity$1
+ com.example.shiftroster.MainActivity$2
 com/example/shiftroster/SplashScreen.java
  com.example.shiftroster.SplashScreen
  com.example.shiftroster.SplashScreen$1
@@ -34,11 +37,8 @@ com/example/shiftroster/ShiftSearchFragment.java
  com.example.shiftroster.ShiftSearchFragment$1
 com/example/shiftroster/ShiftSearchListView.java
  com.example.shiftroster.ShiftSearchListView
-com/example/shiftroster/MainActivity.java
- com.example.shiftroster.MainActivity
- com.example.shiftroster.MainActivity$1
- com.example.shiftroster.MainActivity$2
-com/example/shiftroster/LauncherActivity.java
- com.example.shiftroster.LauncherActivity
- com.example.shiftroster.LauncherActivity$1
- com.example.shiftroster.LauncherActivity$2
+com/example/shiftroster/FragmentAdapter.java
+ com.example.shiftroster.FragmentAdapter
+com/example/shiftroster/ResourceSearchFragment.java
+ com.example.shiftroster.ResourceSearchFragment
+ com.example.shiftroster.ResourceSearchFragment$1

@@ -95,6 +95,8 @@ public class ResourceSearchFragment extends Fragment {
             public void onClick(View v) {
                 leaveIndex.clear();
                 ArrayList<String> leaveDates = new ArrayList<>();
+                ArrayList<String> shiftName = new ArrayList<>();
+                ArrayList<String> finalString = new ArrayList<>();
                 selectedName = spinner_resource.getSelectedItem().toString();
                 selectedNameIndex = spinner_resource.getSelectedItemPosition();
                 selectedShiftIndex = spinner_shift.getSelectedItemPosition();
@@ -111,11 +113,17 @@ public class ResourceSearchFragment extends Fragment {
                     for (Integer i:leaveIndex)
                     {
                         leaveDates.add(GlobalVar.mainCSV.get(i).get(0));
+                        shiftName.add(GlobalVar.mainCSV.get(i).get(selectedNameIndex));
                         //Toast.makeText(MainActivity.this, "@"+selectedName+ " has leaves on: "+ allRows.get(i).get(0), Toast.LENGTH_SHORT).show();
                     }
 
+                    for (int i=0; i< leaveDates.size();i++){
+                        String temp = "Date: "+ leaveDates.get(i)+ "      --      Shift: "+shiftName.get(i);
+                        finalString.add(temp);
+                    }
+
                     Intent intent = new Intent(getContext(), LeaveSearchListView.class);
-                    intent.putStringArrayListExtra("leaveDates", leaveDates);
+                    intent.putStringArrayListExtra("leaveDates", finalString);
                     intent.putExtra("name",selectedName);
                     intent.putExtra("shiftName", selectedShift);
                     startActivity(intent);
