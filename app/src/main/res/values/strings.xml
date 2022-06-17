@@ -5,6 +5,7 @@
         <item>First shift(F3){G1 Included}</item>
         <item>Second Shift(S2){G3 Included}</item>
         <item>Third Shift(T7)</item>
+        <item>T3(17:00-02:30 IST)</item>
         <item>General(G1: 8:30-18:00 IST)</item>
         <item>General(G3: 11:30-21:00)</item>
         <item>Other (GS)</item>
@@ -12,7 +13,7 @@
     </string-array>
 
     <string-array name="shifts_for_res">
-        <item>First shift(F3: 6:00-15:30 IST)</item>
+        <item>First shift(F3: 6:00 -15:30 IST)</item>
         <item>Second Shift(S2: 14:00-23:30 IST)</item>
         <item>Third Shift(T7: 22:00-7:30)</item>
         <item>General(G1: 8:30-18:00 IST)</item>

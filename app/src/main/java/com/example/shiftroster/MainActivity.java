@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         shift_search.add("F3");
         shift_search.add("S2");
         shift_search.add("T7");
+        shift_search.add("T3");
         shift_search.add("G1");
         shift_search.add("G3");
         shift_search.add("GS");
@@ -119,11 +120,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        csvfileString = this.getApplicationInfo().dataDir + File.separatorChar + "SR_May_2022_CSV.csv";
+        csvfileString = this.getApplicationInfo().dataDir + File.separatorChar + "June22_SR_CSV.csv";
 
         try {
             AssetManager am = getAssets();
-            InputStream inputStream = am.open("SR_May_2022_CSV.csv");
+            InputStream inputStream = am.open("June22_SR_CSV.csv");
             File csvfile = createFileFromInputStream(inputStream);
             CSVReader reader = new CSVReader(new FileReader(csvfile));
             String[] nextLine;
